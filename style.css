@@ -1,0 +1,347 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 35px 20px;
+    background: #f8fafc;
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+}
+
+/* MAIN RESUME */
+
+.resume {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 55px;
+    background: white;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.06);
+    position: relative;
+    transition: background 0.3s, color 0.3s;
+}
+
+.top-line {
+    height: 5px;
+    background: #2563eb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* HEADER */
+
+.resume-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px 0 35px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.role {
+    font-size: 17px;
+    color: #2563eb;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.bio {
+    max-width: 700px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 22px;
+}
+
+/* ROUND PROFILE IMAGE */
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #dbeafe;
+    flex-shrink: 0;
+}
+
+/* CONTACT BUTTONS */
+
+.contact-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    padding: 11px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.primary,
+.follow-button {
+    background: #2563eb;
+    color: white;
+}
+
+.secondary {
+    background: #e5e7eb;
+    color: #1f2937;
+}
+
+/* SECTIONS */
+
+.resume-section {
+    padding: 25px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.resume-section h2 {
+    font-size: 21px;
+    color: #2563eb;
+    margin-bottom: 14px;
+}
+
+.resume-section p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #4b5563;
+}
+
+/* EDUCATION */
+
+.resume-item {
+    padding: 5px 0;
+}
+
+.resume-item h3 {
+    font-size: 17px;
+    margin-bottom: 7px;
+    color: #1f2937;
+}
+
+.resume-item p {
+    margin-bottom: 5px;
+}
+
+.resume-item span {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* SKILLS - SIMPLE TEXT */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 25px;
+}
+
+.skills span {
+    background: none;
+    padding: 0;
+    color: #374151;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* INTERESTS */
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.details div {
+    padding: 0;
+    background: none;
+}
+
+.detail-title {
+    display: block;
+    color: #2563eb;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.details strong {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* STATUS */
+
+.status-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.status {
+    color: #2563eb !important;
+    font-size: 13px !important;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* FOLLOWERS */
+
+.follow-area {
+    text-align: center;
+    margin-top: 25px;
+    padding: 20px 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+.follow-label {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.follow-count {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.follow-button {
+    padding: 10px 22px;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+/* DARK MODE */
+
+.resume.dark-mode {
+    background: #1e293b;
+    color: white;
+}
+
+.resume.dark-mode h1,
+.resume.dark-mode .resume-item h3,
+.resume.dark-mode .details strong {
+    color: white;
+}
+
+.resume.dark-mode .role,
+.resume.dark-mode .bio,
+.resume.dark-mode .resume-section p {
+    color: #cbd5e1;
+}
+
+.resume.dark-mode .resume-header,
+.resume.dark-mode .resume-section,
+.resume.dark-mode .follow-area {
+    border-color: #475569;
+}
+
+.resume.dark-mode .skills span {
+    color: #e2e8f0;
+}
+
+.resume.dark-mode .secondary {
+    background: #475569;
+    color: white;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .resume {
+        padding: 30px 22px;
+    }
+
+    .resume-header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .profile-image {
+        width: 135px;
+        height: 135px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .role {
+        font-size: 15px;
+    }
+
+    .bio {
+        font-size: 14px;
+    }
+
+    .details {
+        gap: 14px;
+    }
+
+    .status-area {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .buttons .button {
+        flex: 1;
+    }
+}
